@@ -1,0 +1,25 @@
+{
+    "title": "CuidaTuAgua",
+    "subtitle": "Control inteligente del agua",
+    "description": "Sistema innovador de registro y monitoreo del consumo de agua para hogares modernos.",
+
+    "section1": {
+        "title": "Informacion del Proyecto",
+        "info1": "Proyecto académico desarrollado en el SENA",
+        "info2": "Enfoque en sostenibilidad y consumo responsable de agua",
+        "info3": "Monitoreo inteligente del uso del agua en hogares",
+        "info4": "Educación ambiental y prevención del desperdicio de agua"
+    },
+
+    "section2": {
+        "title": "Datos de contacto",
+        "mail": "Correo: ",
+        "email": "CuidaTuAgua@mail.com",
+        "phone": "Teléfono: ",
+        "number": "300 123 4567",
+        "address": "Dirección: ",
+        "location": "Calle Falsa 123, Ciudad, País"
+    },
+    "copyright": "© 2026 CuidaTuAgua. Todos los derechos reservados."
+    
+}

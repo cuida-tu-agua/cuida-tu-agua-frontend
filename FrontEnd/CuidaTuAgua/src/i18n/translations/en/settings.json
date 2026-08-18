@@ -1,0 +1,49 @@
+{
+  "title": "Settings",
+  "subtitle": "Customize language and appearance",
+  "back": "Back to Dashboard",
+  "theme": {
+    "title": "Theme",
+    "description": "Change the visual appearance of the app",
+    "light": "Light",
+    "dark": "Dark",
+    "standard": "Standard",
+    "eco": "Eco",
+    "ecoLight": "Eco Light",
+    "ecoDark": "Eco Dark"
+  },
+  "density": {
+    "title": "Density",
+    "compact": "Compact",
+    "standard": "Standard",
+    "comfortable": "Comfortable"
+  },
+  "language": {
+    "title": "Language",
+    "description": "Select the application language",
+    "english": "English",
+    "spanish": "Spanish",
+    "french": "French",
+    "portuguese": "Portuguese"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "enabled": "Enabled",
+    "disabled": "Disabled"
+  },
+  "privacy": {
+    "title": "Privacy",
+    "dataSharing": "Data Sharing"
+  },
+  "about": {
+    "title": "About",
+    "version": "Version",
+    "help": "Help & Support"
+  },
+  "logout": {
+    "title": "Logout",
+    "confirm": "Do you want to log out?",
+    "cancel": "Cancel",
+    "confirmButton": "Logout"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "drawer": {
+    "home": "Inicio",
+    "profile": "Perfil",
+    "settings": "Ajustes",
+    "logout": "Cerrar Sesión",
+    "appName": "CuidaTuAgua"
+  },
+  "main": {
+    "welcome": "Bienvenido, aquí verás el resumen de tu consumo",
+    "monthlyConsumption": "Consumo mensual",
+    "liters": "Litros",
+    "logout": "Cerrar sesión"
+  },
+  "home": {
+    "home": "Hogar",
+    "liters": "Litros",
+    "addHome": "Agregar Hogar",
+    "successTitle": "¡Listo!",
+    "successMessage": "Hogar agregado correctamente."
+  },
+  "stats": {
+    "title": "Estadísticas",
+    "subtitle": "Resumen de consumo y ahorro de agua",
+    "monthlyConsumption": "Consumo mensual",
+    "estimatedSavings": "Ahorro estimado",
+    "goalAchieved": "Meta cumplida",
+    "dailyAverage": "Promedio diario",
+    "performanceTitle": "Rendimiento",
+    "performanceDescription": "Tu consumo de agua ha disminuido un 9% comparado con el mes anterior. Mantienes una tendencia positiva en ahorro y sostenibilidad.",
+    "progressText": "85% de meta alcanzada",
+    "historyTitle": "Historial mensual",
+    "january": "Enero",
+    "february": "Febrero",
+    "march": "Marzo",
+    "april": "Abril"
+  }
+}

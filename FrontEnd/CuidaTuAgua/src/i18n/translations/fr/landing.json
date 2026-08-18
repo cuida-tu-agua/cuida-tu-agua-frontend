@@ -1,0 +1,84 @@
+{
+  "navbar": {
+    "title": "CuidaTuAgua",
+    "features": "Fonctionnalités",
+    "howItWorks": "Comment ça marche ?",
+    "contact": "Contact",
+    "accessButton": "Accéder"
+  },
+
+  "carousel": {
+    "slide1": {
+      "title": "Surveillez et Contrôlez la Consommation d’Eau de Votre Maison",
+      "description": "Système innovant pour enregistrer et surveiller la consommation d’eau en temps réel. Économisez de l’argent, protégez l’environnement et prenez le contrôle de vos ressources en eau."
+    }
+  },
+
+  "feature-characteristics": {
+    "title": "Fonctionnalités Clés",
+    "description": "Tout ce dont vous avez besoin pour contrôler totalement la consommation d’eau dans votre maison.",
+    "items": [
+      {
+        "id": "1",
+        "title": "Analyse en Temps Réel",
+        "description": "Visualisez votre consommation d’eau instantanément et prenez des décisions éclairées pour économiser."
+      },
+      {
+        "id": "2",
+        "title": "Alertes Intelligentes",
+        "description": "Recevez des notifications sur une consommation anormale, des fuites possibles ou des dépenses élevées."
+      },
+      {
+        "id": "3",
+        "title": "Accès Mobile",
+        "description": "Accédez à vos données depuis n’importe quel appareil, à tout moment et en tout lieu."
+      },
+      {
+        "id": "4",
+        "title": "Réduction des Coûts",
+        "description": "Identifiez des opportunités d’économie et réduisez votre facture mensuelle."
+      },
+      {
+        "id": "5",
+        "title": "Données Sécurisées",
+        "description": "Vos informations sont protégées selon les normes de sécurité les plus élevées."
+      },
+      {
+        "id": "6",
+        "title": "Historique Complet",
+        "description": "Accédez à tout votre historique de consommation quand vous en avez besoin."
+      }
+    ]
+  },
+
+  "feature-function": {
+    "title": "Comment ça marche ?",
+    "description": "Commencer est simple et rapide. Suivez ces 4 étapes et commencez à économiser de l’eau dès aujourd’hui.",
+    "items": [
+      {
+        "id": "1",
+        "step": "01",
+        "title": "Inscription",
+        "description": "Enregistrez votre maison et fournissez les informations de base de votre compteur d’eau."
+      },
+      {
+        "id": "2",
+        "step": "02",
+        "title": "Lecture du Compteur",
+        "description": "Saisissez les relevés de votre compteur périodiquement ou configurez l’enregistrement automatique."
+      },
+      {
+        "id": "3",
+        "step": "03",
+        "title": "Analyse",
+        "description": "Le système analyse votre consommation, identifie les tendances et génère des recommandations."
+      },
+      {
+        "id": "4",
+        "step": "04",
+        "title": "Économisez",
+        "description": "Prenez des décisions éclairées et réduisez votre consommation et vos coûts d’eau."
+      }
+    ]
+  }
+}

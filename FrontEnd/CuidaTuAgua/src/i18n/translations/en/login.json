@@ -1,0 +1,69 @@
+{
+  "title": "Sign in",
+  "form":{
+    "mail": "Email / Document",
+    "password": "Password",
+    "forgot": "Forgot your password?",
+    "register": "Don’t have an account? Register",
+    "access": "Access"
+  },
+
+  "carousel":[
+    {
+      "title": "Welcome",
+      "description": "Control your water consumption with data and real-time alerts."
+    },
+    {
+      "title": "Save water",
+      "description": "Learn your habits and reduce consumption with simple recommendations."
+    },
+    {
+      "title": "Monitor",
+      "description":"Receive clear reports about your usage and keep your home more sustainable."
+    }
+  ],
+  "feedback": {
+    "successTitle": "Login successful",
+    "successMessage": "You have logged in successfully.",
+    "errorTitle": "Login error",
+    "errorMessage": "Incorrect credentials. Try again.",
+    "emptyIdentifier": "Enter your username",
+    "emptyPassword": "Enter your password",
+    "invalidIdentifier": "Enter a valid email or numeric ID",
+    "noAccount": "No registered account found. Please register first.",
+    "recoveryTitle": "Recovery",
+    "recoveryMessage": "Functionality not implemented"
+  },
+  "forgotPassword": {
+    "title": "Recover password",
+    "codeTitle": "Enter code",
+    "newPasswordTitle": "New password",
+    "step1Title": "Enter your email or document",
+    "step2Title": "Enter the 6-digit code",
+    "step3Title": "Create your new password",
+    "confirmPassword": "Confirm password",
+    "nextButton": "Next",
+    "updateButton": "Update password",
+    "userNotFound": "User not found",
+    "codeSent": "Code sent",
+    "codeMessage": "A code has been sent to your email. Enter the 6 digits.",
+    "invalidCode": "The code must have 6 digits",
+    "codeValid": "Valid code",
+    "changePassword": "Now create your new password",
+    "passwordMismatch": "Passwords do not match",
+    "passwordChanged": "Password updated",
+    "passwordSuccess": "Your password has been successfully updated",
+    "codeLabel": "Verification code",
+    "stepIndicator": {
+      "identity": "Identity",
+      "code": "Code",
+      "password": "Password"
+    },
+    "step2Subtitle": "We sent a 6-digit code to your email",
+    "step2Info": "Check your inbox or spam folder",
+    "step3Description": "Make sure you use uppercase, lowercase and special characters",
+    "closeButton": "Close",
+    "backButton": "Back",
+    "codePlaceholder": "000000"
+  }
+}

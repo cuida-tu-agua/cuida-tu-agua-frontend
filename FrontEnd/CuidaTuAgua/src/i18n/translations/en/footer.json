@@ -1,0 +1,23 @@
+{
+    "title": "CuidaTuAgua",
+    "subtitle": "Intelligent Water Control",
+    "description": "Innovative water consumption monitoring system for modern homes.",
+
+    "section1": {
+        "title": "Project Information",
+        "info1": "Academic project developed at SENA",
+        "info2": "Focus on sustainability and responsible water consumption",
+        "info3": "Intelligent monitoring of water usage in homes",
+        "info4": "Environmental education and prevention of water waste"
+    },
+    "section2": {
+        "title": "Contact Information",
+        "mail": "Email: ",
+        "email": "CuidaTuAgua@mail.com",
+        "phone": "Phone: ",
+        "number": "300 123 4567",
+        "address": "Address: ",
+        "location": "123 Fake Street, City, Country"
+    },
+    "copyright": "© 2026 CuidaTuAgua. All rights reserved."
+}

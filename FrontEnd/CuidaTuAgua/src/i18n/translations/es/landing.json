@@ -1,0 +1,85 @@
+{
+  "navbar": {
+    "title": "CuidaTuAgua",
+    "features": "Características",
+    "howItWorks": "¿Cómo Funciona?",
+    "contact": "Contacto",
+    "accessButton": "Acceder"
+  },
+
+  "carousel": {
+    "slide1": {
+      "title": "Monitorea y Controla el Consumo de Agua en tu Hogar",
+      "description": "Sistema innovador de registro y monitoreo del consumo de agua en tiempo real. Ahorra dinero, cuida el medio ambiente y toma el control de tus recursos hídricos."
+    }
+  },
+
+  "feature-characteristics": {
+    "title": "Características Destacadas",
+    "description": "Todo lo que necesitas para tener el control total del agua en tu hogar.",
+    "items": [
+      {
+        "id": "1",
+        "title": "Análisis en Tiempo Real",
+        "description": "Visualiza tu consumo de agua al instante y toma decisiones informadas para ahorrar."
+      },
+      {
+        "id": "2",
+        "title": "Alertas Inteligentes",
+        "description": "Recibe notificaciones sobre consumo anormal, posibles fugas o gastos elevados."
+      },
+      {
+        "id": "3",
+        "title": "Acceso Móvil",
+        "description": "Consulta tus datos desde cualquier dispositivo, en cualquier momento y lugar."
+      },
+      {
+        "id": "4",
+        "title": "Reducción de Costos",
+        "description": "Identifica oportunidades de ahorro y reduce tu factura mensual."
+      },
+      {
+        "id": "5",
+        "title": "Datos Seguros",
+        "description": "Tu información protegida con los más altos estándares de seguridad."
+      },
+      {
+        "id": "6",
+        "title": "Historial Completo",
+        "description": "Accede a todo tu historial de consumo cuando lo necesites."
+      }
+    ]
+  },
+
+  "feature-function":{
+    "title": "¿Cómo Funciona?",
+    "description": "Comenzar es simple y rápido. Sigue estos 4 pasos y empieza a ahorrar agua hoy mismo.",
+    "items":[
+      {
+        "id": "1",
+        "step": "01",
+        "title": "Registro",
+        "description": "Registra tu hogar y proporciona los datos básicos de tu medidor de agua."
+      },
+      {
+        "id": "2",
+        "step": "02",
+        "title": "Toma de Lectura",
+        "description": "Ingresa las lecturas de tu medidor periódicamente o configura el registro automático."
+      },
+      {
+        "id": "3",
+        "step": "03",
+        "title": "Análisis",
+        "description": "El sistema analiza tu consumo, identifica patrones y genera recomendaciones."
+      },
+      {
+        "id": "4",
+        "step": "04",
+        "title": "Ahorra",
+        "description": "Toma decisiones informadas y reduce tu consumo y costos de agua."
+      }
+    ]
+  }
+
+}

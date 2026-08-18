@@ -1,0 +1,73 @@
+{
+    "title": "S'inscrire",
+    "section1": {
+        "title": "Informations sur l'utilisateur",
+        "input1": "Nom complet",
+        "input2": "Numéro d'identification",
+        "input3": "Email",
+        "input4": "Mot de passe",
+        "input5": "Confirmer le mot de passe"
+    },
+    "section2": {
+        "title": "Informations sur le domicile",
+        "input1": "Nom du domicile",
+        "input2": "Adresse",
+        "input3": "Téléphone",
+        "input4": "Stratum",
+        "input5": "Nombre de résidents",
+        "input6": "Pays",
+        "checkbox": "Conditions générales d'utilisation"
+    },
+
+    "action": {
+        "register": "S'inscrire"
+    },
+
+    "paragraph1": "Bienvenue sur Cuida Tu Agua. En accédant à cette plateforme et en l'utilisant, vous acceptez les présentes Conditions générales. Si vous n'êtes pas d'accord avec l'une d'entre elles, vous devez vous abstenir d'utiliser la plateforme.",
+    "paragraph2": "Cuida Tu Agua est une plateforme numérique conçue pour promouvoir une utilisation responsable de l'eau grâce au suivi de la consommation, à la visualisation de statistiques, à la génération de rapports et à la fourniture de recommandations visant à économiser cette ressource.",
+    "paragraph3": "L'accès, l'inscription ou l'utilisation de la plateforme implique que l'utilisateur a lu, compris et accepté ces Conditions générales ainsi que la Politique de traitement des données personnelles.",
+    "paragraph4": "Pour accéder à certaines fonctionnalités, l'utilisateur doit s'inscrire en fournissant des informations vraies, complètes et à jour. Il s'engage à conserver la confidentialité de ses identifiants, à ne pas partager son compte, à mettre à jour ses données et à signaler toute utilisation non autorisée.",
+    "paragraph5": "L'utilisateur s'engage à utiliser la plateforme de manière responsable et conformément à la législation colombienne. Il est interdit de l'utiliser à des fins illégales, d'y accéder sans autorisation, d'altérer son fonctionnement, de distribuer des logiciels malveillants, de usurper l'identité d'autrui ou de copier du contenu sans autorisation.",
+    "paragraph6": "Tout le contenu de Cuida Tu Agua, y compris les logiciels, le code source, les conceptions, les logos, les images, les bases de données, les textes et les graphiques, est la propriété de ses développeurs ou de leurs ayants droit respectifs et est protégé par la législation colombienne sur le droit d'auteur et la propriété intellectuelle.",
+    "paragraph7": "Cuida Tu Agua collecte et traite des données personnelles uniquement pour fournir ses services et améliorer l'expérience utilisateur, en respectant les principes de légalité, de finalité, de liberté, de sécurité, de transparence et de confidentialité.",
+    "paragraph8": "Cuida Tu Agua s'efforcera de maintenir la plateforme disponible en continu. Cependant, elle ne garantit pas une disponibilité permanente en raison de la maintenance programmée, des mises à jour du système, des pannes techniques ou des cas fortuits ou de force majeure.",
+    "paragraph9": "Cuida Tu Agua fournit des outils de surveillance et d'analyse à des fins informatives. Elle ne garantit pas que la plateforme soit exempte d'erreurs ni que les données fournies par des tiers soient complètement exactes.",
+    "paragraph10": "Cuida Tu Agua peut modifier ces Conditions générales à tout moment. Les modifications seront publiées sur la plateforme et entreront en vigueur à compter de leur publication.",
+    "paragraph11": "Cuida Tu Agua peut suspendre ou annuler l'accès d'un utilisateur lorsqu'il enfreint ces Conditions générales, réalise des activités frauduleuses, compromet la sécurité ou la stabilité de la plateforme, ou l'utilise à des fins illégales.",
+    "paragraph12": "Les présentes Conditions générales sont régies par la législation de la République de Colombie, en particulier la Constitution politique, la loi 527 de 1999, la loi 23 de 1982, la loi 1273 de 2009, la loi 1480 de 2011, la loi 1581 de 2012, le décret 1377 de 2013, la loi 1712 de 2014 et la loi 1915 de 2018.",
+    "paragraph13": "Pour toute question relative à ces Conditions générales, les utilisateurs peuvent contacter les canaux officiels mis à disposition par Cuida Tu Agua.",
+    "paragraph14": "Les présentes Conditions générales entrent en vigueur à compter de leur publication sur la plateforme et restent en vigueur jusqu'à ce qu'elles soient modifiées ou remplacées par une nouvelle version.",
+
+    "close": "Fermer",
+  "success": {
+    "title": "Inscription réussie",
+    "message": "Votre compte a été créé avec succès. Vous pouvez maintenant vous connecter."
+  },
+  "feedback": {
+    "errorTitle": "Erreur",
+    "emptyFullName": "Entrez votre nom complet",
+    "emptyDocument": "Entrez votre document",
+    "invalidDocument": "Entrez un document numérique avec au moins 8 chiffres",
+    "emptyEmail": "Entrez votre email",
+    "invalidEmail": "Entrez un email valide",
+    "emptyPassword": "Entrez votre mot de passe",
+    "emptyConfirmPassword": "Confirmez votre mot de passe",
+    "passwordTooShort": "Le mot de passe doit comporter au moins 8 caractères",
+    "passwordFormat": "Utilisez au moins 8 caractères, une majuscule, une minuscule et un caractère spécial",
+    "passwordMismatch": "Les mots de passe ne correspondent pas",
+    "emptyHomeName": "Entrez le nom du domicile",
+    "emptyAddress": "Entrez l'adresse",
+    "emptyPhone": "Entrez votre numéro de téléphone",
+    "invalidPhone": "Entrez un numéro avec entre 10 et 15 chiffres",
+    "emptyStratum": "Entrez le stratum",
+    "invalidNumber": "Entrez un nombre valide",
+    "emptyInhabitants": "Entrez le nombre d'habitants",
+    "termsNotAccepted": "Vous devez accepter les termes",
+    "saveError": "Impossible d'enregistrer votre compte. Réessayez."
+    ,
+    "duplicateDocument": "Un compte avec ce numéro d'identification existe déjà",
+    "duplicateEmail": "Un compte avec cet e-mail existe déjà",
+    "duplicateAddress": "Un compte avec cette adresse existe déjà",
+    "duplicatePhone": "Un compte avec ce numéro de téléphone existe déjà"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "navbar": {
+    "title": "CuidaTuAgua",
+    "features": "Features",
+    "howItWorks": "How It Works?",
+    "contact": "Contact",
+    "accessButton": "Access"
+  },
+
+  "carousel": {
+    "slide1": {
+      "title": "Monitor and Control Water Consumption in Your Home",
+      "description": "An innovative system for tracking and monitoring water consumption in real time. Save money, protect the environment, and take control of your water resources."
+    }
+  },
+
+  "feature-characteristics": {
+    "title": "Key Features",
+    "description": "Everything you need to fully control water usage in your home.",
+    "items": [
+      {
+        "id": "1",
+        "title": "Real-Time Analysis",
+        "description": "Visualize your water consumption instantly and make informed decisions to save."
+      },
+      {
+        "id": "2",
+        "title": "Smart Alerts",
+        "description": "Receive notifications about unusual consumption, possible leaks, or high expenses."
+      },
+      {
+        "id": "3",
+        "title": "Mobile Access",
+        "description": "Access your data from any device, anytime and anywhere."
+      },
+      {
+        "id": "4",
+        "title": "Cost Reduction",
+        "description": "Identify saving opportunities and reduce your monthly bill."
+      },
+      {
+        "id": "5",
+        "title": "Secure Data",
+        "description": "Your information is protected with the highest security standards."
+      },
+      {
+        "id": "6",
+        "title": "Complete History",
+        "description": "Access your full consumption history whenever you need it."
+      }
+    ]
+  },
+
+  "feature-function": {
+    "title": "How It Works?",
+    "description": "Getting started is simple and quick. Follow these 4 steps and start saving water today.",
+    "items": [
+      {
+        "id": "1",
+        "step": "01",
+        "title": "Registration",
+        "description": "Register your home and provide basic information about your water meter."
+      },
+      {
+        "id": "2",
+        "step": "02",
+        "title": "Meter Reading",
+        "description": "Enter your meter readings periodically or set up automatic tracking."
+      },
+      {
+        "id": "3",
+        "step": "03",
+        "title": "Analysis",
+        "description": "The system analyzes your consumption, identifies patterns, and generates recommendations."
+      },
+      {
+        "id": "4",
+        "step": "04",
+        "title": "Save",
+        "description": "Make informed decisions and reduce your water consumption and costs."
+      }
+    ]
+  }
+}

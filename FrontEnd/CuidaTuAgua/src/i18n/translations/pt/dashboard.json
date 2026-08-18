@@ -1,0 +1,38 @@
+{
+  "drawer": {
+    "home": "Início",
+    "profile": "Meu Perfil",
+    "settings": "Configurações",
+    "logout": "Sair",
+    "appName": "CuidaTuAgua"
+  },
+  "main": {
+    "welcome": "Bem-vindo, aqui você verá o resumo do seu consumo",
+    "monthlyConsumption": "Consumo mensal",
+    "liters": "Litros",
+    "logout": "Sair"
+  },
+  "home": {
+    "home": "Casa",
+    "liters": "Litros",
+    "addHome": "Adicionar Casa",
+    "successTitle": "Pronto!",
+    "successMessage": "Casa adicionada com sucesso."
+  },
+  "stats": {
+    "title": "Estatísticas",
+    "subtitle": "Resumo do consumo e economia de água",
+    "monthlyConsumption": "Consumo mensal",
+    "estimatedSavings": "Economia estimada",
+    "goalAchieved": "Meta alcançada",
+    "dailyAverage": "Média diária",
+    "performanceTitle": "Desempenho",
+    "performanceDescription": "Seu consumo de água diminuiu 9% em comparação com o mês passado. Você mantém uma tendência positiva em economia e sustentabilidade.",
+    "progressText": "85% da meta alcançada",
+    "historyTitle": "Histórico mensal",
+    "january": "Janeiro",
+    "february": "Fevereiro",
+    "march": "Março",
+    "april": "Abril"
+  }
+}

@@ -1,0 +1,73 @@
+{
+    "title": "Registrar",
+    "section1": {
+        "title": "Informações do Usuário",
+        "input1": "Nome Completo",
+        "input2": "Número de Identificação",
+        "input3": "Email",
+        "input4": "Senha",
+        "input5": "Confirmar senha"
+    },
+    "section2": {
+        "title": "Informações da Casa",
+        "input1": "Nome da Casa",
+        "input2": "Endereço",
+        "input3": "Telefone",
+        "input4": "Estrato",
+        "input5": "Número de Moradores",
+        "input6": "País",
+        "checkbox": "Termos e condições de uso"
+    },
+
+    "action": {
+        "register": "Registrar"
+    },
+
+    "paragraph1": "Bem-vindo ao Cuida Tu Agua. Ao acessar e utilizar esta plataforma, você aceita estes Termos e Condições. Se não concordar com algum deles, deverá abster-se de usar a plataforma.",
+    "paragraph2": "O Cuida Tu Agua é uma plataforma digital criada para promover o uso responsável da água por meio do monitoramento do consumo, da visualização de estatísticas, da geração de relatórios e da oferta de recomendações voltadas para a economia desse recurso.",
+    "paragraph3": "O acesso, o cadastro ou a utilização da plataforma implica que o usuário leu, compreendeu e aceitou estes Termos e Condições, bem como a Política de Tratamento de Dados Pessoais.",
+    "paragraph4": "Para acessar determinadas funcionalidades, o usuário deverá se cadastrar fornecendo informações verdadeiras, completas e atualizadas. Compromete-se a manter a confidencialidade de suas credenciais, não compartilhar sua conta, atualizar seus dados e notificar qualquer uso não autorizado.",
+    "paragraph5": "O usuário compromete-se a utilizar a plataforma de forma responsável e em conformidade com a legislação colombiana. É proibido utilizá-la para atividades ilícitas, acessá-la sem autorização, alterar seu funcionamento, distribuir software malicioso, personificar terceiros ou copiar conteúdo sem permissão.",
+    "paragraph6": "Todo o conteúdo do Cuida Tu Agua, incluindo software, código-fonte, designs, logotipos, imagens, bancos de dados, textos e gráficos, é de propriedade de seus desenvolvedores ou respectivos titulares e está protegido pela legislação colombiana sobre direitos autorais e propriedade intelectual.",
+    "paragraph7": "O Cuida Tu Agua coleta e trata dados pessoais apenas para prestar seus serviços e melhorar a experiência do usuário, respeitando os princípios de legalidade, finalidade, liberdade, segurança, transparência e confidencialidade.",
+    "paragraph8": "O Cuida Tu Agua buscará manter a plataforma disponível de forma contínua. No entanto, não garante disponibilidade permanente devido a manutenção programada, atualizações do sistema, falhas técnicas ou casos fortuitos ou de força maior.",
+    "paragraph9": "O Cuida Tu Agua fornece ferramentas de monitoramento e análise para fins informativos. Não garante que a plataforma esteja livre de erros nem que os dados fornecidos por terceiros sejam completamente precisos.",
+    "paragraph10": "O Cuida Tu Agua poderá modificar estes Termos e Condições a qualquer momento. As alterações serão publicadas na plataforma e entrarão em vigor a partir de sua publicação.",
+    "paragraph11": "O Cuida Tu Agua poderá suspender ou cancelar o acesso de um usuário quando este violar estes Termos e Condições, realizar atividades fraudulentas, afetar a segurança ou estabilidade da plataforma ou utilizá-la para fins ilegais.",
+    "paragraph12": "Estes Termos e Condições são regidos pela legislação da República da Colômbia, especialmente pela Constituição Política, a Lei 527 de 1999, a Lei 23 de 1982, a Lei 1273 de 2009, a Lei 1480 de 2011, a Lei 1581 de 2012, o Decreto 1377 de 2013, a Lei 1712 de 2014 e a Lei 1915 de 2018.",
+    "paragraph13": "Para dúvidas relacionadas a estes Termos e Condições, os usuários poderão se comunicar por meio dos canais oficiais disponibilizados pelo Cuida Tu Agua.",
+    "paragraph14": "Estes Termos e Condições entram em vigor a partir de sua publicação na plataforma e permanecerão vigentes até que sejam modificados ou substituídos por uma nova versão.",
+
+    "close": "Fechar",
+  "success": {
+    "title": "Registro bem-sucedido",
+    "message": "Sua conta foi criada com sucesso. Agora você pode fazer login."
+  },
+  "feedback": {
+    "errorTitle": "Erro",
+    "emptyFullName": "Digite seu nome completo",
+    "emptyDocument": "Digite seu documento",
+    "invalidDocument": "Digite um documento numérico com pelo menos 8 dígitos",
+    "emptyEmail": "Digite seu email",
+    "invalidEmail": "Digite um email válido",
+    "emptyPassword": "Digite sua senha",
+    "emptyConfirmPassword": "Confirme sua senha",
+    "passwordTooShort": "A senha deve ter pelo menos 8 caracteres",
+    "passwordFormat": "Use pelo menos 8 caracteres, uma maiúscula, uma minúscula e um caractere especial",
+    "passwordMismatch": "As senhas não coincidem",
+    "emptyHomeName": "Digite o nome da casa",
+    "emptyAddress": "Digite o endereço",
+    "emptyPhone": "Digite seu número de telefone",
+    "invalidPhone": "Digite um número com entre 10 e 15 dígitos",
+    "emptyStratum": "Digite o estrato",
+    "invalidNumber": "Digite um número válido",
+    "emptyInhabitants": "Digite o número de habitantes",
+    "termsNotAccepted": "Você deve aceitar os termos",
+    "saveError": "Não foi possível salvar sua conta. Tente novamente."
+    ,
+    "duplicateDocument": "Já existe uma conta com esse número de identificação",
+    "duplicateEmail": "Já existe uma conta com esse e-mail",
+    "duplicateAddress": "Já existe uma conta com esse endereço",
+    "duplicatePhone": "Já existe uma conta com esse número de telefone"
+  }
+}

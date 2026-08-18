@@ -1,0 +1,69 @@
+{
+  "title": "Entrar",
+  "form":{
+    "mail": "Email / Documento",
+    "password": "Senha",
+    "forgot": "Esqueceu sua senha?",
+    "register": "Não tem conta? Registre-se",
+    "access": "Acessar"
+  },
+
+  "carousel":[
+    {
+      "title": "Bem-vindo",
+      "description": "Controle seu consumo de água com dados e alertas em tempo real."
+    },
+    {
+      "title": "Economize água",
+      "description": "Conheça seus hábitos e reduza o consumo com recomendações simples."
+    },
+    {
+      "title": "Monitore",
+      "description":"Receba relatórios claros sobre seu uso e mantenha seu lar mais sustentável."
+    }
+  ],
+  "feedback": {
+    "successTitle": "Login bem-sucedido",
+    "successMessage": "Você fez login com sucesso.",
+    "errorTitle": "Erro de login",
+    "errorMessage": "Credenciais incorretas. Tente novamente.",
+    "emptyIdentifier": "Digite seu usuário",
+    "emptyPassword": "Digite sua senha",
+    "invalidIdentifier": "Digite um email válido ou documento numérico",
+    "noAccount": "Nenhuma conta registrada encontrada. Por favor registre-se primeiro.",
+    "recoveryTitle": "Recuperação",
+    "recoveryMessage": "Funcionalidade não implementada"
+  },
+  "forgotPassword": {
+    "title": "Recuperar senha",
+    "codeTitle": "Digite o código",
+    "newPasswordTitle": "Nova senha",
+    "step1Title": "Digite seu email ou documento",
+    "step2Title": "Digite o código de 6 dígitos",
+    "step3Title": "Crie sua nova senha",
+    "confirmPassword": "Confirmar senha",
+    "nextButton": "Próximo",
+    "updateButton": "Atualizar senha",
+    "userNotFound": "Usuário não encontrado",
+    "codeSent": "Código enviado",
+    "codeMessage": "Um código foi enviado para seu email. Digite os 6 dígitos.",
+    "invalidCode": "O código deve ter 6 dígitos",
+    "codeValid": "Código válido",
+    "changePassword": "Agora crie sua nova senha",
+    "passwordMismatch": "As senhas não coincidem",
+    "passwordChanged": "Senha atualizada",
+    "passwordSuccess": "Sua senha foi atualizada com sucesso",
+    "codeLabel": "Código de verificação",
+    "stepIndicator": {
+      "identity": "Identidade",
+      "code": "Código",
+      "password": "Senha"
+    },
+    "step2Subtitle": "Enviamos um código de 6 dígitos para o seu e-mail",
+    "step2Info": "Confira sua caixa de entrada ou pasta de spam",
+    "step3Description": "Certifique-se de usar letras maiúsculas, minúsculas e caracteres especiais",
+    "closeButton": "Fechar",
+    "backButton": "Voltar",
+    "codePlaceholder": "000000"
+  }
+}

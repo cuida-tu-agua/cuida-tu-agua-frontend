@@ -1,0 +1,49 @@
+{
+  "title": "Paramètres",
+  "subtitle": "Personnalisez la langue et l'apparence",
+  "back": "Retour au Tableau de Bord",
+  "theme": {
+    "title": "Thème",
+    "description": "Changez l'apparence visuelle de l'app",
+    "light": "Clair",
+    "dark": "Sombre",
+    "standard": "Standard",
+    "eco": "Éco",
+    "ecoLight": "Éco Clair",
+    "ecoDark": "Éco Sombre"
+  },
+  "density": {
+    "title": "Densité",
+    "compact": "Compact",
+    "standard": "Standard",
+    "comfortable": "Confortable"
+  },
+  "language": {
+    "title": "Langue",
+    "description": "Sélectionnez la langue de l'application",
+    "english": "Anglais",
+    "spanish": "Espagnol",
+    "french": "Français",
+    "portuguese": "Portugais"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "enabled": "Activées",
+    "disabled": "Désactivées"
+  },
+  "privacy": {
+    "title": "Confidentialité",
+    "dataSharing": "Partage de Données"
+  },
+  "about": {
+    "title": "À propos",
+    "version": "Version",
+    "help": "Aide et Support"
+  },
+  "logout": {
+    "title": "Déconnexion",
+    "confirm": "Voulez-vous vous déconnecter ?",
+    "cancel": "Annuler",
+    "confirmButton": "Déconnexion"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "title": "Se connecter",
+  "form":{
+    "mail": "Email / document",
+    "password": "Mot de passe",
+    "forgot": "Mot de passe oublié ?",
+    "register": "Vous n'avez pas de compte ? Inscrivez-vous",
+    "access": "Accéder"
+  },
+
+  "carousel":[
+    {
+      "title": "Bienvenue",
+      "description": "Contrôlez votre consommation d'eau avec des données et des alertes en temps réel."
+    },
+    {
+      "title": "Économisez l'eau",
+      "description": "Découvrez vos habitudes et réduisez votre consommation avec des recommandations simples."
+    },
+    {
+      "title": "Surveillez",
+      "description":"Recevez des rapports clairs sur votre usage et gardez votre maison plus durable."
+    }
+  ],
+  "feedback": {
+    "successTitle": "Connexion réussie",
+    "successMessage": "Vous vous êtes connecté avec succès.",
+    "errorTitle": "Erreur de connexion",
+    "errorMessage": "Identifiants incorrects. Réessayez.",
+    "emptyIdentifier": "Entrez votre nom d'utilisateur",
+    "emptyPassword": "Entrez votre mot de passe",
+    "invalidIdentifier": "Entrez un email valide ou un identifiant numérique",
+    "noAccount": "Aucun compte enregistré trouvé. Veuillez d'abord vous inscrire.",
+    "recoveryTitle": "Récupération",
+    "recoveryMessage": "Fonctionnalité non implémentée"
+  },
+  "forgotPassword": {
+    "title": "Récupérer le mot de passe",
+    "codeTitle": "Entrer le code",
+    "newPasswordTitle": "Nouveau mot de passe",
+    "step1Title": "Entrez votre email ou document",
+    "step2Title": "Entrez le code à 6 chiffres",
+    "step3Title": "Créez votre nouveau mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "nextButton": "Suivant",
+    "updateButton": "Mettre à jour le mot de passe",
+    "userNotFound": "Utilisateur non trouvé",
+    "codeSent": "Code envoyé",
+    "codeMessage": "Un code a été envoyé à votre email. Entrez les 6 chiffres.",
+    "invalidCode": "Le code doit avoir 6 chiffres",
+    "codeValid": "Code valide",
+    "changePassword": "Créez maintenant votre nouveau mot de passe",
+    "passwordMismatch": "Les mots de passe ne correspondent pas",
+    "passwordChanged": "Mot de passe mis à jour",
+    "passwordSuccess": "Votre mot de passe a été mis à jour avec succès",
+    "codeLabel": "Code de vérification",
+    "stepIndicator": {
+      "identity": "Identité",
+      "code": "Code",
+      "password": "Mot de passe"
+    },
+    "step2Subtitle": "Nous avons envoyé un code à 6 chiffres à votre email",
+    "step2Info": "Vérifiez votre boîte de réception ou votre dossier spam",
+    "step3Description": "Assurez-vous d'utiliser des majuscules, des minuscules et des caractères spéciaux",
+    "closeButton": "Fermer",
+    "backButton": "Retour",
+    "codePlaceholder": "000000"
+  }
+}
