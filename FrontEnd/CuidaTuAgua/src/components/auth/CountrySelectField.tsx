@@ -13,27 +13,26 @@ import { useTheme, spacing, typography } from "@theme/index";
 
 type CountryOption = {
   label: string;
-  code: string;
 };
 
 type Props = {
   label?: string;
   value: string;
-  onCountryChange: (country: string, code: string) => void;
+  onCountryChange: (country: string) => void;
   errorMessage?: string;
 };
 
 const countries: CountryOption[] = [
-  { label: "Colombia", code: "+57" },
-  { label: "Ecuador", code: "+593" },
-  { label: "Estados Unidos", code: "+1" },
+  { label: "Colombia"},
+  { label: "Ecuador"},
+  { label: "Estados Unidos"},
 ];
 
 export default function CountrySelectField({
   label,
   value,
   onCountryChange,
-  errorMessage,
+  errorMessage, 
 }: Props) {
   const [isPickerVisible, setIsPickerVisible] = useState(false);
   const { colors } = useTheme();
@@ -60,7 +59,7 @@ export default function CountrySelectField({
         activeOpacity={0.8}
       >
         <Text style={[styles.selectorText, { color: colors.textPrimary }]}>
-          {selectedCountry.label} ({selectedCountry.code})
+          {selectedCountry.label}
         </Text>
         <Ionicons name="chevron-down" size={18} color={colors.primary} />
       </TouchableOpacity>
@@ -92,7 +91,6 @@ export default function CountrySelectField({
               >
                 <FlatList
                   data={countries}
-                  keyExtractor={(item) => item.code}
                   renderItem={({ item }) => {
                     const isSelected = item.label === value;
                     return (
@@ -104,7 +102,7 @@ export default function CountrySelectField({
                         ]}
                         activeOpacity={0.7}
                         onPress={() => {
-                          onCountryChange(item.label, item.code);
+                          onCountryChange(item.label);
                           setIsPickerVisible(false);
                         }}
                       >
@@ -128,7 +126,7 @@ export default function CountrySelectField({
                               },
                             ]}
                           >
-                            {item.label} ({item.code})
+                            {item.label}
                           </Text>
                         </View>
                       </TouchableOpacity>

@@ -21,9 +21,9 @@ type Props = {
   label?: string;
   placeholder?: string;
   countryCode: string;
-  onCountryCodeChange: (code: string) => void;
   value: string;
   onChangeText: (text: string) => void;
+  onChangeCountryCode: (code: string) => void;
   errorMessage?: string;
 };
 
@@ -37,9 +37,9 @@ export default function PhoneInputField({
   label,
   placeholder,
   countryCode,
-  onCountryCodeChange,
   value,
   onChangeText,
+  onChangeCountryCode,
   errorMessage,
 }: Props) {
   const [isPickerVisible, setIsPickerVisible] = useState(false);
@@ -52,14 +52,14 @@ export default function PhoneInputField({
       {label && (
         <Text style={[styles.label, { color: colors.textPrimary }]}>{label}</Text>
       )}
-
+      
       <View style={styles.row}>
         <TouchableOpacity
-          style={[styles.codeButton, { borderColor: colors.primary, backgroundColor: colors.surface }]}
+          style={[styles.selector, { borderColor: colors.primary, backgroundColor: colors.surface }]}
           onPress={() => setIsPickerVisible(true)}
           activeOpacity={0.8}
         >
-          <Text style={[styles.codeText, { color: colors.textPrimary }]}>{selectedCode.code}</Text>
+          <Text style={[styles.selectorText, { color: colors.textPrimary }]}>{selectedCode.code}</Text>
           <Ionicons name="chevron-down" size={18} color={colors.primary} />
         </TouchableOpacity>
 
@@ -79,44 +79,82 @@ export default function PhoneInputField({
           ]}
           autoComplete="tel"
         />
-      </View>
 
+        </View>
       {errorMessage ? (
         <Text style={[styles.errorText, { color: colors.error }]}> 
           {errorMessage}
         </Text>
       ) : null}
 
-      <Modal
-        visible={isPickerVisible}
-        animationType="slide"
-        transparent
-        onRequestClose={() => setIsPickerVisible(false)}
-      >
-        <TouchableWithoutFeedback onPress={() => setIsPickerVisible(false)}>
-          <View style={styles.modalOverlay} />
-        </TouchableWithoutFeedback>
-
-        <View style={[styles.modalContainer, { backgroundColor: colors.surface }]}> 
-          <Text style={[styles.modalTitle, { color: colors.primary }]}>Selecciona indicador</Text>
-          <FlatList
-            data={countryCodes}
-            keyExtractor={(item) => item.code}
-            renderItem={({ item }) => (
-              <TouchableOpacity
-                style={[styles.option, { borderColor: colors.border }]}
-                activeOpacity={0.7}
-                onPress={() => {
-                  onCountryCodeChange(item.code);
-                  setIsPickerVisible(false);
-                }}
-              >
-                <Text style={[styles.optionText, { color: colors.textPrimary }]}> {item.label} {item.code}</Text>
-              </TouchableOpacity>
-            )}
-          />
-        </View>
-      </Modal>
+   <Modal
+           visible={isPickerVisible}
+           transparent
+           animationType="fade"
+           onRequestClose={() => setIsPickerVisible(false)}
+         >
+           <TouchableWithoutFeedback onPress={() => setIsPickerVisible(false)}>
+             <View style={styles.overlay}>
+               <TouchableWithoutFeedback>
+                 <View
+                   style={[
+                     styles.dropdownMenu,
+                     {
+                       backgroundColor: colors.surface,
+                       borderColor: colors.border,
+                     },
+                   ]}
+                 >
+                   <FlatList
+                     data={countryCodes}
+                     keyExtractor={(item) => item.code}
+                     renderItem={({ item }) => {
+                       const isSelected = item.label === value;
+                       return (
+                         <TouchableOpacity
+                           style={[
+                             styles.option,
+                             { borderColor: colors.border },
+                             isSelected && { backgroundColor: "rgba(255,255,255,0.05)" },
+                           ]}
+                           activeOpacity={0.7}
+                           onPress={() => {
+                            onChangeCountryCode(item.code);
+                             setIsPickerVisible(false);
+                           }}
+                         >
+                           <View style={styles.optionContent}>
+                             <Ionicons
+                               name="checkmark"
+                               size={18}
+                               color={colors.primary}
+                               style={{
+                                 marginRight: spacing.sm,
+                                 opacity: isSelected ? 1 : 0, // Se oculta si no está seleccionado
+                               }}
+                             />
+                             <Text
+                               style={[
+                                 styles.optionText,
+                                 { color: colors.textPrimary },
+                                 isSelected && {
+                                   fontWeight: "600",
+                                   color: colors.primary,
+                                 },
+                               ]}
+                             >
+                               {item.label} ({item.code})
+                             </Text>
+                           </View>
+                         </TouchableOpacity>
+                       );
+                     }}
+                   />
+                 </View>
+               </TouchableWithoutFeedback>
+             </View>
+           </TouchableWithoutFeedback>
+         </Modal>
     </View>
   );
 }
@@ -137,21 +175,21 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: spacing.sm,
   },
-  codeButton: {
-    minWidth: 96,
+  selector: {
     borderWidth: 1,
     borderRadius: 10,
-    paddingVertical: spacing.sm,
     paddingHorizontal: spacing.md,
+    paddingVertical: spacing.sm,
+    height: 40,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
   },
-  codeText: {
+  selectorText: {
     ...typography.body,
-    fontWeight: "600",
+    fontWeight: "500",
   },
-  input: {
+    input: {
     flex: 1,
     borderWidth: 1,
     borderRadius: 10,
@@ -161,29 +199,41 @@ const styles = StyleSheet.create({
   },
   errorText: {
     marginTop: spacing.xs,
+    fontSize: 12,
   },
-  modalOverlay: {
+  // Fondo oscuro traslúcido
+  overlay: {
     flex: 1,
-    backgroundColor: "rgba(0,0,0,0.35)",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: spacing.xl,
   },
-  modalContainer: {
-    maxHeight: "45%",
-    marginHorizontal: spacing.md,
-    borderRadius: 16,
+  // Ventana flotante estilo Menú (Dropdown)
+  dropdownMenu: {
+    width: "100%",
+    maxWidth: 320,
+    maxHeight: 280,
+    borderRadius: 12,
+    borderWidth: 1,
+    elevation: 8,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 6,
     overflow: "hidden",
-  },
-  modalTitle: {
-    ...typography.subtitle,
-    fontSize: 18,
-    fontWeight: "600",
-    padding: spacing.md,
   },
   option: {
     paddingVertical: spacing.md,
     paddingHorizontal: spacing.md,
-    borderBottomWidth: 1,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+  },
+  optionContent: {
+    flexDirection: "row",
+    alignItems: "center",
   },
   optionText: {
     ...typography.body,
+    fontSize: 15,
   },
 });
