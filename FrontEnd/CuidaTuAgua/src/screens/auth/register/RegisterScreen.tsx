@@ -370,13 +370,20 @@ export default function RegisterScreen({ goToLogin }: Props) {
                     )}
                   />
 
-                  <CountrySelectField
-                    label={t("section2.input6") ?? ""}
-                    value={country}
-                    onCountryChange={(selectedCountry, selectedCode) => {
-                      setCountry(selectedCountry);
-                      setCountryCode(selectedCode);
+                  <PhoneInputField
+                    label={t("section2.input3") ?? ""}
+                    countryCode={countryCode}
+                    value={phone}
+                    onChangeText={setPhone}
+                    onChangeCountryCode={(selectedCountryCode) => {
+                      setCountryCode(selectedCountryCode);
                     }}
+                    placeholder={t("section2.input3") ?? ""}
+                    errorMessage={
+                      phone.length > 0 && !isValidPhone(phone)
+                        ? t("feedback.invalidPhone")
+                        : ""
+                    }
                   /> 
 
                   <InputField
@@ -447,13 +454,20 @@ export default function RegisterScreen({ goToLogin }: Props) {
                     )}
                   />
 
-                  <CountrySelectField
-                    label={t("section2.input6") ?? ""}
-                    value={country}
-                    onCountryChange={(selectedCountry, selectedCode) => {
-                      setCountry(selectedCountry);
-                      setCountryCode(selectedCode);
+                  <PhoneInputField
+                    label={t("section2.input3") ?? ""}
+                    countryCode={countryCode}
+                    value={phone}
+                    onChangeText={setPhone}
+                    onChangeCountryCode={(selectedCountryCode) => {
+                    setCountryCode(selectedCountryCode);
                     }}
+                    placeholder={t("section2.input3") ?? ""}
+                    errorMessage={
+                      phone.length > 0 && !isValidPhone(phone)
+                        ? t("feedback.invalidPhone")
+                        : ""
+                    }
                   />
 
                   <InputField
@@ -526,19 +540,15 @@ export default function RegisterScreen({ goToLogin }: Props) {
                       t("feedback.emptyAddress"),
                     )}
                   />
-                  <PhoneInputField
-                    label={t("section2.input3") ?? ""}
-                    countryCode={countryCode}
-                    onCountryCodeChange={setCountryCode}
-                    value={phone}
-                    onChangeText={setPhone}
-                    placeholder={t("section2.input3") ?? ""}
-                    errorMessage={
-                      phone.length > 0 && !isValidPhone(phone)
-                        ? t("feedback.invalidPhone")
-                        : ""
-                    }
+
+                  <CountrySelectField
+                    label={t("section2.input6") ?? ""}
+                    value={country}
+                    onCountryChange={(selectedCountry) => {
+                      setCountry(selectedCountry);
+                    }}
                   />
+
                   <StratumSelectField
                     label={t("section2.input4") ?? ""}
                     value={stratum}
@@ -614,19 +624,15 @@ export default function RegisterScreen({ goToLogin }: Props) {
                       t("feedback.emptyAddress"),
                     )}
                   />
-                  <PhoneInputField
-                    label={t("section2.input3") ?? ""}
-                    countryCode={countryCode}
-                    onCountryCodeChange={setCountryCode}
-                    value={phone}
-                    onChangeText={setPhone}
-                    placeholder={t("section2.input3") ?? ""}
-                    errorMessage={
-                      phone.length > 0 && !isValidPhone(phone)
-                        ? t("feedback.invalidPhone")
-                        : ""
-                    }
+
+                  <CountrySelectField
+                    label={t("section2.input6") ?? ""}
+                    value={country}
+                    onCountryChange={(selectedCountry) => {
+                      setCountry(selectedCountry);
+                    }}
                   />
+
                   <StratumSelectField
                     label={t("section2.input4") ?? ""}
                     value={stratum}
