@@ -58,33 +58,70 @@ export default function StratumSelectField({
 
       <Modal
         visible={isPickerVisible}
-        animationType="slide"
         transparent
+        animationType="fade"
         onRequestClose={() => setIsPickerVisible(false)}
       >
         <TouchableWithoutFeedback onPress={() => setIsPickerVisible(false)}>
-          <View style={styles.modalOverlay} />
-        </TouchableWithoutFeedback>
-
-        <View style={[styles.modalContainer, { backgroundColor: colors.surface }]}> 
-          <Text style={[styles.modalTitle, { color: colors.primary }]}>Selecciona un estrato</Text>
-          <FlatList
-            data={options}
-            keyExtractor={(item) => item}
-            renderItem={({ item }) => (
-              <TouchableOpacity
-                style={[styles.option, { borderColor: colors.border }]}
-                activeOpacity={0.7}
-                onPress={() => {
-                  onChange(item);
-                  setIsPickerVisible(false);
-                }}
+          <View style={styles.overlay}>
+            <TouchableWithoutFeedback>
+              <View
+                style={[
+                  styles.dropdownMenu,
+                  {
+                    backgroundColor: colors.surface,
+                    borderColor: colors.border,
+                  },
+                ]}
               >
-                <Text style={[styles.optionText, { color: colors.textPrimary }]}> {item}</Text>
-              </TouchableOpacity>
-            )}
-          />
-        </View>
+                <FlatList
+                  data={options}
+                  renderItem={({ item }) => {
+                    const isSelected = item === value;
+                    return (
+                      <TouchableOpacity
+                        style={[
+                          styles.option,
+                          { borderColor: colors.border },
+                          isSelected && { backgroundColor: "rgba(255,255,255,0.05)" },
+                        ]}
+                        activeOpacity={0.7}
+                        onPress={() => {
+                          onChange(item);
+                          setIsPickerVisible(false);
+                        }}
+                      >
+                        <View style={styles.optionContent}>
+                          <Ionicons
+                            name="checkmark"
+                            size={18}
+                            color={colors.primary}
+                            style={{
+                              marginRight: spacing.sm,
+                              opacity: isSelected ? 1 : 0, // Se oculta si no está seleccionado
+                            }}
+                          />
+                          <Text
+                            style={[
+                              styles.optionText,
+                              { color: colors.textPrimary },
+                              isSelected && {
+                                fontWeight: "600",
+                                color: colors.primary,
+                              },
+                            ]}
+                          >
+                            {item}
+                          </Text>
+                        </View>
+                      </TouchableOpacity>
+                    );
+                  }}
+                />
+              </View>
+            </TouchableWithoutFeedback>
+          </View>
+        </TouchableWithoutFeedback>
       </Modal>
     </View>
   );
@@ -121,6 +158,32 @@ const styles = StyleSheet.create({
   modalOverlay: {
     flex: 1,
     backgroundColor: "rgba(0,0,0,0.35)",
+  },
+    // Fondo oscuro traslúcido
+  overlay: {
+    flex: 1,
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: spacing.xl,
+  },
+  // Ventana flotante estilo Menú (Dropdown)
+  dropdownMenu: {
+    width: "100%",
+    maxWidth: 480,
+    maxHeight: 380,
+    borderRadius: 12,
+    borderWidth: 1,
+    elevation: 8,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 6,
+    overflow: "hidden",
+  },
+    optionContent: {
+    flexDirection: "row",
+    alignItems: "center",
   },
   modalContainer: {
     maxHeight: "45%",
