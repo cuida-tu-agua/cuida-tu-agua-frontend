@@ -25,7 +25,7 @@ export default function Sidebar({ tab, onTabChange, onSignOut }: SidebarProps) {
         width: 280,
         backgroundColor: colors.surfaceAlt,
         padding: 16,
-        height: Platform.OS === "web" ? "100vh" : "100%",
+        height: Platform.OS === "web" ? ("100vh" as any) : "100%",
         justifyContent: "space-between",
       }}
     >

@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import { View, Text, TouchableOpacity, FlatList } from "react-native";
+import { Modal, View, Text, TouchableOpacity, FlatList } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -8,7 +8,7 @@ import { useTheme } from "@theme/index";
 import { useTranslation } from "react-i18next";
 import { useResponsive } from "@hooks/useResponsive";
 
-import FeedbackModal from "@components/common/FeedbackModal";
+import CreateHome from "./createHome/createHome";
 
 type Props = {
   onOpenStats?: (homeId?: string) => void;
@@ -24,7 +24,7 @@ export default function HomeScreen({ onOpenStats }: Props) {
 
   const NUM_COLUMNS = isMobile ? 1 : 3;
 
-  const [modalVisible, setModalVisible] = useState(false);
+  const [createHomeVisible, setCreateHomeVisible] = useState(false);
 
   const data = useMemo(
     () =>
@@ -47,8 +47,7 @@ export default function HomeScreen({ onOpenStats }: Props) {
   }, [data]);
 
   const handleAddHome = () => {
-    // simulación de creación
-    setModalVisible(true);
+    setCreateHomeVisible(true);
   };
 
   const renderItem = ({ item, index }: any) => {
@@ -98,13 +97,18 @@ export default function HomeScreen({ onOpenStats }: Props) {
         />
       </View>
 
-      <FeedbackModal
-        visible={modalVisible}
-        title={t("home.successTitle")}
-        message={t("home.successMessage")}
-        type="success"
-        onClose={() => setModalVisible(false)}
-      />
+      <Modal
+        visible={createHomeVisible}
+        animationType="slide"
+        transparent
+        onRequestClose={() => setCreateHomeVisible(false)}
+      >
+        <View style={styles.createModalOverlay}>
+          <View style={styles.createModalContent}>
+            <CreateHome onCancel={() => setCreateHomeVisible(false)} />
+          </View>
+        </View>
+      </Modal>
     </SafeAreaView>
   );
 }

@@ -20,6 +20,23 @@ export const createStyles = (colors: ThemeColors) =>
       paddingHorizontal: 10,
     },
 
+    createModalOverlay: {
+      flex: 1,
+      backgroundColor: "rgba(0, 0, 0, 0.45)",
+      justifyContent: "center",
+      alignItems: "center",
+      padding: 20,
+    },
+
+    createModalContent: {
+      width: "100%",
+      maxWidth: 700,
+      maxHeight: "90%",
+      backgroundColor: colors.surface,
+      borderRadius: 14,
+      overflow: "hidden",
+    },
+
     listContainer: {
       paddingBottom: 20,
     },
