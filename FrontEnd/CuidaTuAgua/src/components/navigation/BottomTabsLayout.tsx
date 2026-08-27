@@ -14,10 +14,10 @@ export default function BottomTabsLayout() {
   const { colors } = useTheme();
   const { t } = useTranslation("dashboard");
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, minHeight: 0 }}>
 
       {/* CONTENT */}
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, minHeight: 0 }}>
         {tab === "home" && <HomeScreen />}
         {tab === "profile" && <ProfileScreen />}
         {tab === "settings" && <SettingsScreen />}

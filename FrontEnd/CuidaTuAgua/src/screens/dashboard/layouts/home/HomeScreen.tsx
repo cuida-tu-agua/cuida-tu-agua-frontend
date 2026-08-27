@@ -86,7 +86,7 @@ export default function HomeScreen({ onOpenStats }: Props) {
         {t("main.welcome")}
       </Text>
 
-      <View style={styles.bodyContent}>
+      <View style={[styles.bodyContent, { minHeight: 0 }]}>
         <FlatList
           data={enhancedData}
           renderItem={renderItem}

@@ -1,5 +1,12 @@
 import React from "react";
-import { View, Text, ScrollView, TouchableOpacity, Platform } from "react-native";
+import {
+  View,
+  Text,
+  ScrollView,
+  TouchableOpacity,
+  Platform,
+  ViewStyle,
+} from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import TabButton from "@components/navigation/TabButton";
@@ -52,8 +59,13 @@ export default function StatsScreen({ onClose }: Props) {
     { month: t("stats.march"), value: "12.450 L" },
     { month: t("stats.april"), value: "11.980 L" },
   ];
-  // On web, allow the ScrollView to manage overflow and grow to available space
-  const webOverflowStyle = Platform.OS === "web" ? { overflow: "auto" as any } : {};
+  const webScrollStyle: ViewStyle | undefined =
+    Platform.OS === "web"
+      ? ({
+          height: "100%",
+          overflowY: "auto",
+        } as unknown as ViewStyle)
+      : undefined;
 
   return (
     <SafeAreaView
@@ -62,17 +74,18 @@ export default function StatsScreen({ onClose }: Props) {
     >
       <View style={{ flex: 1, minHeight: 0, position: "relative" as any }}>
         <ScrollView
-          style={{
-            flex: 1,
-            backgroundColor: colors.background,
-            ...webOverflowStyle,
-            maxHeight: "100%",
-          }}
+          style={[
+            {
+              flex: 1,
+              minHeight: 0,
+              backgroundColor: colors.background,
+            },
+            webScrollStyle,
+          ]}
           contentContainerStyle={{
             padding: 20,
             paddingBottom: isMobile ? 100 : 40,
-            // Let content determine height so ScrollView can overflow
-            flexGrow: 0,
+            flexGrow: Platform.OS === "web" ? 0 : 1,
           }}
           keyboardShouldPersistTaps="handled"
           showsVerticalScrollIndicator={false}
