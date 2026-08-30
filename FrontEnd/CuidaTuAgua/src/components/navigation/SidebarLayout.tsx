@@ -17,7 +17,7 @@ export default function SidebarLayout({ onSignOut, userName = "User" }: SidebarL
   const safeOnSignOut = onSignOut ?? (() => {});
   const navigation = useNavigation<any>();
   const [tab, setTab] = useState("home");
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [selectedHome, setSelectedHome] = useState<string | undefined>(undefined);
   const { colors } = useTheme();
 
@@ -25,16 +25,17 @@ export default function SidebarLayout({ onSignOut, userName = "User" }: SidebarL
     setSidebarOpen(!sidebarOpen);
   };
 
-  return (
-    <View style={{ flex: 1, flexDirection: "row" }}>
-      {sidebarOpen && (
-        <Sidebar 
-          tab={tab} 
-          onTabChange={setTab} 
-          onSignOut={safeOnSignOut}
-        />
-      )}
+  const closeSidebar = () => {
+    setSidebarOpen(false);
+  };
 
+  const handleTabChange = (newTab: string) => {
+    setTab(newTab);
+    closeSidebar();
+  };
+
+  return (
+    <View style={{ flex: 1, position: "relative" }}>
       <View style={{ flex: 1, flexDirection: "column", minHeight: 0 }}>
         <View
           style={{
@@ -64,7 +65,7 @@ export default function SidebarLayout({ onSignOut, userName = "User" }: SidebarL
                 fontWeight: "bold",
               }}
             >
-              {sidebarOpen ? "✕" : "☰"}
+              ☰
             </Text>
           </TouchableOpacity>
 
@@ -123,7 +124,34 @@ export default function SidebarLayout({ onSignOut, userName = "User" }: SidebarL
           {tab === "stats" && <StatsScreen onClose={() => setTab("home")} />}
         </View>
       </View>
-      
+
+      {/* BACKDROP - oscurece el contenido sin achicarlo, clic afuera cierra */}
+      {sidebarOpen && (
+        <TouchableOpacity
+          activeOpacity={1}
+          onPress={closeSidebar}
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: "rgba(0,0,0,0.5)",
+          }}
+        />
+      )}
+
+      {/* SIDEBAR OVERLAY */}
+      {sidebarOpen && (
+        <View style={{ position: "absolute", top: 0, left: 0, bottom: 0 }}>
+          <Sidebar
+            tab={tab}
+            onTabChange={handleTabChange}
+            onSignOut={safeOnSignOut}
+            onClose={closeSidebar}
+          />
+        </View>
+      )}
     </View>
   );
 }

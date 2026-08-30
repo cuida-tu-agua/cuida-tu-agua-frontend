@@ -8,9 +8,10 @@ interface SidebarProps {
   tab: string;
   onTabChange: (tab: string) => void;
   onSignOut: () => void;
+  onClose: () => void;
 }
 
-export default function Sidebar({ tab, onTabChange, onSignOut }: SidebarProps) {
+export default function Sidebar({ tab, onTabChange, onSignOut, onClose }: SidebarProps) {
   const { colors } = useTheme();
   const { t } = useTranslation("dashboard");
   const navItems = [
@@ -24,41 +25,72 @@ export default function Sidebar({ tab, onTabChange, onSignOut }: SidebarProps) {
       style={{
         width: 280,
         backgroundColor: colors.surfaceAlt,
-        padding: 16,
         height: Platform.OS === "web" ? ("100vh" as any) : "100%",
         justifyContent: "space-between",
       }}
     >
       <View>
-        {/* LOGO */}
-        <View style={{ alignItems: "center", marginBottom: 32 }}>
-          <Logo />
-        </View>
-
-        {/* NAV ITEMS */}
-        <View style={{ gap: 12 }}>
-          {navItems.map((item) => (
-            <TouchableOpacity
-              key={item.value}
-              onPress={() => onTabChange(item.value)}
+        {/* CLOSE BUTTON - misma posicion/tamaño que el boton de hamburguesa del header */}
+        <View
+          style={{
+            height: 60,
+            flexDirection: "row",
+            alignItems: "center",
+            paddingHorizontal: 16,
+          }}
+        >
+          <TouchableOpacity
+            onPress={onClose}
+            style={{
+              width: 40,
+              height: 40,
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Text
               style={{
-                paddingVertical: 12,
-                paddingHorizontal: 16,
-                borderRadius: 8,
-                backgroundColor: tab === item.value ? colors.primary : "transparent",
+                fontSize: 24,
+                color: colors.textPrimary,
+                fontWeight: "bold",
               }}
             >
-              <Text
+              ✕
+            </Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={{ paddingHorizontal: 16 }}>
+          {/* LOGO */}
+          <View style={{ alignItems: "center", marginBottom: 32 }}>
+            <Logo />
+          </View>
+
+          {/* NAV ITEMS */}
+          <View style={{ gap: 12 }}>
+            {navItems.map((item) => (
+              <TouchableOpacity
+                key={item.value}
+                onPress={() => onTabChange(item.value)}
                 style={{
-                  color: tab === item.value ? colors.textOnPrimary : colors.textPrimary,
-                  fontSize: 16,
-                  fontWeight: tab === item.value ? "600" : "400",
+                  paddingVertical: 12,
+                  paddingHorizontal: 16,
+                  borderRadius: 8,
+                  backgroundColor: tab === item.value ? colors.primary : "transparent",
                 }}
               >
-                {item.label}
-              </Text>
-            </TouchableOpacity>
-          ))}
+                <Text
+                  style={{
+                    color: tab === item.value ? colors.textOnPrimary : colors.textPrimary,
+                    fontSize: 16,
+                    fontWeight: tab === item.value ? "600" : "400",
+                  }}
+                >
+                  {item.label}
+                </Text>
+              </TouchableOpacity>
+            ))}
+          </View>
         </View>
       </View>
 
@@ -66,6 +98,8 @@ export default function Sidebar({ tab, onTabChange, onSignOut }: SidebarProps) {
       <TouchableOpacity
         onPress={onSignOut}
         style={{
+          marginHorizontal: 16,
+          marginBottom: 16,
           paddingVertical: 12,
           paddingHorizontal: 16,
           borderRadius: 8,

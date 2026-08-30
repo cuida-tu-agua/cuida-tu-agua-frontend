@@ -53,7 +53,10 @@ export default function AppNavigator() {
       </Stack.Screen>
 
       {/* DASHBOARD */}
-      <Stack.Screen name="dashboard">
+      <Stack.Screen
+        name="dashboard"
+        options={{ cardStyle: { height: "100vh" as any } }}
+      >
         {({ navigation }) => (
           <DashboardScreen
             onSignOut={() =>
