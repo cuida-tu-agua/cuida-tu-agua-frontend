@@ -34,5 +34,13 @@
     "february": "Fevereiro",
     "march": "Março",
     "april": "Abril"
+  },
+  "initialHome": {
+    "title": "Nenhum Dispositivo Conectado",
+    "description": "Para começar a monitorar seu consumo de água, você precisa conectar um dispositivo inteligente à sua casa.",
+    "highlight": "Escaneie este código QR com nosso dispositivo para vincular sua casa",
+    "contactButton": "Entre em Contato para Comprar",
+    "moreInfoButton": "Mais Informações",
+    "infoBox": "Código do seu dispositivo aqui.\nEntre em contato conosco para receber assistência com a instalação."
   }
 }

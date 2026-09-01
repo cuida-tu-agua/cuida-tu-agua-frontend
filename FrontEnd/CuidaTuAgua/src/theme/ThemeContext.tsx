@@ -6,6 +6,7 @@ export type ThemeMode = 'light' | 'dark';
 export type ThemeType = 'standard' | 'eco';
 
 export type ThemeColors = {
+  [x: string]: ColorValue | undefined;
   // Base
   primary: string;
   primaryHover?: string;

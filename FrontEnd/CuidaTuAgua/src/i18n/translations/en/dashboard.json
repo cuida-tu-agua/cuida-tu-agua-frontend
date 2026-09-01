@@ -34,5 +34,13 @@
     "february": "February",
     "march": "March",
     "april": "April"
+  },
+  "initialHome": {
+    "title": "No Device Connected",
+    "description": "To start monitoring your water consumption, you need to connect a smart device to your home.",
+    "highlight": "Scan this QR code with our device to link your home",
+    "contactButton": "Contact Us to Buy",
+    "moreInfoButton": "More Information",
+    "infoBox": "Your device code here.\nContact us for assistance with installation."
   }
 }

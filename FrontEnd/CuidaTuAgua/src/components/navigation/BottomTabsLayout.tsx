@@ -3,14 +3,16 @@ import { View } from "react-native";
 import { useTheme } from "@theme/index";
 import { useTranslation } from "react-i18next";
 
-
 import HomeScreen from "@screens/dashboard/layouts/home/HomeScreen";
 import ProfileScreen from "@screens/dashboard/layouts/profile/ProfileScreen";
 import SettingsScreen from "@screens/dashboard/layouts/settings/SettingsScreen";
+import StatsScreen from "@screens/dashboard/layouts/home/statsHome/StatsScreen";
+import InitialHome from "@screens/dashboard/layouts/home/initialHome/InitialHome";
 import TabButton from "./TabButton";
 
 export default function BottomTabsLayout() {
   const [tab, setTab] = useState("home");
+  const [selectedHome, setSelectedHome] = useState<string | undefined>(undefined);
   const { colors } = useTheme();
   const { t } = useTranslation("dashboard");
   return (
@@ -18,9 +20,29 @@ export default function BottomTabsLayout() {
 
       {/* CONTENT */}
       <View style={{ flex: 1 }}>
-        {tab === "home" && <HomeScreen />}
+        {tab === "home" && (
+          <HomeScreen
+            onOpenStats={(homeId?: string) => {
+              setSelectedHome(homeId);
+              setTab("stats");
+            }}
+            onOpenInitialHome={(homeId?: string) => {
+              setSelectedHome(homeId);
+              setTab("initialHome");
+            }}
+          />
+        )}
         {tab === "profile" && <ProfileScreen />}
         {tab === "settings" && <SettingsScreen />}
+        {tab === "stats" && <StatsScreen onClose={() => setTab("home")} />}
+        {tab === "initialHome" && (
+          <InitialHome
+            onClose={() => setTab("home")}
+            onContactUs={() => {
+              console.log("Contact us clicked from home:", selectedHome);
+            }}
+          />
+        )}
       </View>
 
       {/* BOTTOM BAR */}

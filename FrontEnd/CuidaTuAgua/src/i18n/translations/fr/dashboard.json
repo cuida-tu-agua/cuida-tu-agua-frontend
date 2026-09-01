@@ -33,6 +33,12 @@
     "january": "Janvier",
     "february": "Février",
     "march": "Mars",
-    "april": "Avril"
-  }
+    "april": "Avril"  },
+  "initialHome": {
+    "title": "Aucun Appareil Connecté",
+    "description": "Pour commencer à surveiller votre consommation d'eau, vous devez connecter un appareil intelligent à votre domicile.",
+    "highlight": "Scannez ce code QR avec notre appareil pour lier votre maison",
+    "contactButton": "Nous Contacter pour Acheter",
+    "moreInfoButton": "Plus d'Informations",
+    "infoBox": "Code de votre appareil ici.\nContactez-nous pour obtenir de l'aide avec l'installation."  }
 }

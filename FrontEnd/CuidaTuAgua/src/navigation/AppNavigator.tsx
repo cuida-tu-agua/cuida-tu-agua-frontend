@@ -6,7 +6,6 @@ import LandingScreen from "@screens/LandingScreen";
 import LoginScreen from "@screens/auth/login/LoginScreen";
 import RegisterScreen from "@screens/auth/register/RegisterScreen";
 import DashboardScreen from "@screens/dashboard/DashboardScreen";
-import StatsScreen from "@screens/dashboard/StatsScreen";
 
 const Stack = createStackNavigator();
 
@@ -68,10 +67,6 @@ export default function AppNavigator() {
           />
         )}
       </Stack.Screen>
-
-      {/* STATS */}
-      <Stack.Screen name="stats" component={StatsScreen} 
-      options={{ cardStyle: { height: "100vh" as any } }}/>
     </Stack.Navigator>
   );
 }

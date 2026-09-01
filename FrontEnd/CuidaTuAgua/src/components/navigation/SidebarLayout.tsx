@@ -4,7 +4,8 @@ import Sidebar from "./Sidebar";
 import HomeScreen from "@screens/dashboard/layouts/home/HomeScreen";
 import ProfileScreen from "@screens/dashboard/layouts/profile/ProfileScreen";
 import SettingsScreen from "@screens/dashboard/layouts/settings/SettingsScreen";
-import StatsScreen from "@screens/dashboard/StatsScreen";
+import StatsScreen from "@screens/dashboard/layouts/home/statsHome/StatsScreen";
+import InitialHome from "@screens/dashboard/layouts/home/initialHome/InitialHome";
 import { useNavigation } from "@react-navigation/native";
 import { useTheme } from "@theme/index";
 
@@ -117,11 +118,24 @@ export default function SidebarLayout({ onSignOut, userName = "User" }: SidebarL
                 setSelectedHome(homeId);
                 setTab("stats");
               }}
+              onOpenInitialHome={(homeId?: string) => {
+                setSelectedHome(homeId);
+                setTab("initialHome");
+              }}
             />
           )}
           {tab === "profile" && <ProfileScreen />}
           {tab === "settings" && <SettingsScreen />}
           {tab === "stats" && <StatsScreen onClose={() => setTab("home")} />}
+          {tab === "initialHome" && (
+            <InitialHome
+              onClose={() => setTab("home")}
+              onContactUs={() => {
+                // Callback opcional para contacto
+                console.log("Contact us clicked from home:", selectedHome);
+              }}
+            />
+          )}
         </View>
       </View>
 

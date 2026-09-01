@@ -12,9 +12,10 @@ import CreateHome from "./createHome/createHome";
 
 type Props = {
   onOpenStats?: (homeId?: string) => void;
+  onOpenInitialHome?: (homeId?: string) => void;
 };
 
-export default function HomeScreen({ onOpenStats }: Props) {
+export default function HomeScreen({ onOpenStats, onOpenInitialHome }: Props) {
   const navigation = useNavigation<any>();
   const { colors } = useTheme();
   const { t } = useTranslation("dashboard");
@@ -62,15 +63,18 @@ export default function HomeScreen({ onOpenStats }: Props) {
       );
     }
 
+    // Hogar 1 (id=0) abre InitialHome, los demás abren Stats
+    const isFirstHome = item.id === "0";
+
     return (
       <TouchableOpacity
         style={styles.card}
         activeOpacity={0.8}
         onPress={() => {
-          if (onOpenStats) {
-            onOpenStats(item.id);
+          if (isFirstHome) {
+            onOpenInitialHome?.(item.id);
           } else {
-            navigation.navigate("stats");
+            onOpenStats?.(item.id);
           }
         }}
       >
