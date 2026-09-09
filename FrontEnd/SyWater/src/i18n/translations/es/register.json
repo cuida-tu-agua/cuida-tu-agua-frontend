@@ -1,0 +1,75 @@
+{
+    "title": "Registro",
+
+    "section1": {
+        "title":"Datos del usuario",
+        "input1": "Nombre completo",
+        "input2": "Documento de identidad",
+        "input3": "Correo electrónico",
+        "input4": "Contraseña",
+        "input5": "Confirmar contraseña"
+    },
+
+    "section2": {
+        "title":"Datos del hogar",
+        "input1": "Nombre del hogar",
+        "input2": "Dirección",
+        "input3": "Teléfono",
+        "input4": "Estrato",
+        "input5": "Número de habitantes",
+        "input6": "País",
+        "checkbox":"Términos y condiciones de uso"
+    },
+
+    "action": {
+        "register": "Registrarse"
+    },
+
+    "paragraph1": "Bienvenido a Sy Water. Al acceder y utilizar esta plataforma, aceptas los presentes Términos y Condiciones. Si no estás de acuerdo con alguno de ellos, deberás abstenerte de usar la plataforma.",
+    "paragraph2": "Sy Water es una plataforma digital diseñada para promover el uso responsable del agua mediante el monitoreo del consumo, la visualización de estadísticas, la generación de reportes y la entrega de recomendaciones orientadas al ahorro del recurso hídrico.",
+    "paragraph3": "El acceso, registro o utilización de la plataforma implica que el usuario ha leído, comprendido y aceptado estos Términos y Condiciones, así como la Política de Tratamiento de Datos Personales.",
+    "paragraph4": "Para acceder a determinadas funcionalidades, el usuario deberá registrarse proporcionando información veraz, completa y actualizada. Se compromete a mantener la confidencialidad de sus credenciales, no compartir su cuenta, actualizar sus datos y notificar cualquier uso no autorizado.",
+    "paragraph5": "El usuario se compromete a utilizar la plataforma de manera responsable y conforme a la legislación colombiana. Queda prohibido utilizarla para actividades ilícitas, intentar acceder sin autorización, alterar su funcionamiento, distribuir software malicioso, suplantar identidades o copiar contenido sin autorización.",
+    "paragraph6": "Todo el contenido de Sy Water, incluyendo software, código fuente, diseños, logotipos, imágenes, bases de datos, textos y gráficos, es propiedad de sus desarrolladores o de sus respectivos titulares y está protegido por la legislación colombiana sobre derechos de autor y propiedad intelectual.",
+    "paragraph7": "Sy Water recopila y trata datos personales únicamente para prestar sus servicios y mejorar la experiencia del usuario, respetando los principios de legalidad, finalidad, libertad, seguridad, transparencia y confidencialidad.",
+    "paragraph8": "Sy Water procurará mantener la plataforma disponible de forma continua. Sin embargo, no garantiza la disponibilidad permanente debido a mantenimiento programado, actualizaciones del sistema, fallas técnicas o casos fortuitos o fuerza mayor.",
+    "paragraph9": "Sy Water proporciona herramientas de monitoreo y análisis con fines informativos. No garantiza que la plataforma esté libre de errores ni que los datos suministrados por terceros sean completamente exactos.",
+    "paragraph10": "Sy Water podrá modificar estos Términos y Condiciones en cualquier momento. Las modificaciones serán publicadas dentro de la plataforma y entrarán en vigencia desde su publicación.",
+    "paragraph11": "Sy Water podrá suspender o cancelar el acceso de un usuario cuando incumpla estos Términos y Condiciones, realice actividades fraudulentas, afecte la seguridad o estabilidad de la plataforma o utilice la plataforma con fines ilegales.",
+    "paragraph12": "Los presentes Términos y Condiciones se rigen por la legislación de la República de Colombia, especialmente por la Constitución Política, la Ley 527 de 1999, la Ley 23 de 1982, la Ley 1273 de 2009, la Ley 1480 de 2011, la Ley 1581 de 2012, el Decreto 1377 de 2013, la Ley 1712 de 2014 y la Ley 1915 de 2018.",
+    "paragraph13": "Para consultas relacionadas con estos Términos y Condiciones, los usuarios podrán comunicarse mediante los canales oficiales que disponga Sy Water.",
+    "paragraph14": "Los presentes Términos y Condiciones entran en vigor desde su publicación en la plataforma y permanecerán vigentes hasta que sean modificados o sustituidos por una nueva versión.",
+
+    "close":"Cerrar",
+  "success": {
+    "title": "Registro exitoso",
+    "message": "Tu cuenta ha sido creada correctamente. Ahora puedes iniciar sesión."
+  },
+  "feedback": {
+    "errorTitle": "Error",
+    "emptyFullName": "Ingresa tu nombre completo",
+    "emptyDocument": "Ingresa tu documento",
+    "invalidDocument": "Ingresa un documento numérico con al menos 8 dígitos",
+    "emptyEmail": "Ingresa tu correo electrónico",
+    "invalidEmail": "Ingresa un correo válido",
+    "emptyPassword": "Ingresa tu contraseña",
+    "emptyConfirmPassword": "Confirma tu contraseña",
+    "passwordTooShort": "La contraseña debe tener al menos 8 caracteres",
+    "passwordFormat": "Usa al menos 8 caracteres, una mayúscula, una minúscula y un carácter especial",
+    "passwordMismatch": "Las contraseñas no coinciden",
+    "emptyHomeName": "Ingresa el nombre del hogar",
+    "emptyAddress": "Ingresa la dirección",
+    "emptyPhone": "Ingresa tu número de teléfono",
+    "invalidPhone": "Ingresa un número con entre 10 y 15 dígitos",
+    "emptyStratum": "Ingresa el estrato",
+    "invalidNumber": "Ingresa un número válido",
+    "emptyInhabitants": "Ingresa habitantes",
+    "termsNotAccepted": "Debes aceptar los términos",
+    "saveError": "No se pudo guardar tu cuenta. Intenta de nuevo."
+    ,
+    "duplicateDocument": "Ya existe una cuenta con ese número de identificación",
+    "duplicateEmail": "Ya existe una cuenta con ese correo electrónico",
+    "duplicateAddress": "Ya existe una cuenta registrada con esa dirección",
+    "duplicatePhone": "Ya existe una cuenta con ese número de teléfono"
+  }
+}

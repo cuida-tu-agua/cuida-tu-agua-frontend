@@ -1,0 +1,27 @@
+{
+  "title": "My Profile",
+  "personalInfo": {
+    "title": "Personal Information",
+    "name": "Name",
+    "document": "Document",
+    "email": "Email",
+    "password": "Password"
+  },
+  "preferences": {
+    "title": "Preferences",
+    "notifications": "Notifications",
+    "language": "Language",
+    "units": "Units"
+  },
+  "security": {
+    "title": "Security",
+    "changePassword": "Change Password",
+    "twoFactor": "Two-Factor Authentication"
+  },
+  "save": "Save Changes",
+  "cancel": "Cancel",
+  "editProfile": "Edit Profile",
+  "saveChanges": "Save Changes",
+  "profileUpdated": "Profile Updated",
+  "changesSaved": "Changes saved successfully"
+}

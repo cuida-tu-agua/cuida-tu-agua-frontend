@@ -1,0 +1,38 @@
+{
+  "drawer": {
+    "home": "Home",
+    "profile": "My Profile",
+    "settings": "Settings",
+    "logout": "Logout",
+    "appName": "Cuida Tu Agua"
+  },
+  "main": {
+    "welcome": "Welcome, here you'll see your consumption summary",
+    "monthlyConsumption": "Monthly consumption",
+    "liters": "Liters",
+    "logout": "Logout"
+  },
+  "home": {
+    "home": "Home",
+    "liters": "Liters",
+    "addHome": "Add Home",
+    "successTitle": "Done!",
+    "successMessage": "Home added successfully."
+  },
+  "stats": {
+    "title": "Statistics",
+    "subtitle": "Summary of water consumption and savings",
+    "monthlyConsumption": "Monthly consumption",
+    "estimatedSavings": "Estimated savings",
+    "goalAchieved": "Goal achieved",
+    "dailyAverage": "Daily average",
+    "performanceTitle": "Performance",
+    "performanceDescription": "Your water consumption has decreased by 9% compared to last month. You maintain a positive trend in savings and sustainability.",
+    "progressText": "85% goal achieved",
+    "historyTitle": "Monthly history",
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April"
+  }
+}

@@ -73,13 +73,13 @@ export const lightColors: ThemeColors = {
   border: '#E5E7EB',
 
   // Estados
-  success: '#10853B',
+  success: '#16A34A',
   successBg: '#DCFCE7',
 
-  error: '#A91B1B',
+  error: '#DC2626',
   errorBg: '#FEE2E2',
 
-  warning: '#C98107',
+  warning: '#F59E0B',
   warningBg: '#FEF3C7',
 
   info: '#0284C7',
@@ -159,13 +159,13 @@ export const ecoLightColors: ThemeColors = {
   grayDark: '#6B7280',
   border: '#E5E7EB',
 
-  success: '#0E632E',
+  success: '#15803D',
   successBg: '#DCFCE7',
 
-  error: '#A81B1B',
+  error: '#DC2626',
   errorBg: '#FEE2E2',
 
-  warning: '#C88007',
+  warning: '#F59E0B',
   warningBg: '#FEF3C7',
 
   info: '#0EA5A5',
@@ -215,8 +215,8 @@ export const ecoDarkColors: ThemeColors = {
   accentHover: '#3DBABA'
 };
 
-const STORAGE_KEY_MODE = 'cuidatuagua-theme-mode';
-const STORAGE_KEY_TYPE = 'cuidatuagua-theme-type';
+const STORAGE_KEY_MODE = 'sywater-theme-mode';
+const STORAGE_KEY_TYPE = 'sywater-theme-type';
 
 type ThemeContextValue = {
   mode: ThemeMode;

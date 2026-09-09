@@ -1,0 +1,69 @@
+{
+    "title": "Iniciar sesión",
+    "form":{
+        "mail": "Correo / Documento",
+        "password": "Contraseña",
+        "forgot": "¿Olvidaste tu contraseña?",
+        "register": "¿No tienes cuenta? Regístrate",
+        "access": "Acceder"
+    },
+
+    "carousel":[
+        {
+            "title": "Bienvenido",
+            "description": "Controla tu consumo de agua con datos y alertas en tiempo real."
+        },
+        {
+            "title": "Ahorra agua",
+            "description": "Conoce tus hábitos y reduce el consumo con recomendaciones sencillas."
+        },
+        {
+            "title": "Monitorea",
+            "description":"Recibe reportes claros sobre tu uso y mantén tu hogar más sostenible."
+        }
+    ],
+  "feedback": {
+    "successTitle": "Inicio de sesión exitoso",
+    "successMessage": "Has iniciado sesión correctamente.",
+    "errorTitle": "Error de inicio de sesión",
+    "errorMessage": "Credenciales incorrectas. Inténtalo de nuevo.",
+    "emptyIdentifier": "Ingresa tu usuario",
+    "emptyPassword": "Ingresa tu contraseña",
+    "invalidIdentifier": "Ingresa un correo válido o un documento numérico",
+    "noAccount": "No existe una cuenta registrada. Por favor regístrate primero.",
+    "recoveryTitle": "Recuperación",
+    "recoveryMessage": "Funcionalidad no implementada"
+  },
+  "forgotPassword": {
+    "title": "Recuperar contraseña",
+    "codeTitle": "Ingresar código",
+    "newPasswordTitle": "Nueva contraseña",
+    "step1Title": "Ingresa tu correo o documento",
+    "step2Title": "Ingresa el código de 6 dígitos",
+    "step3Title": "Crea tu nueva contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "nextButton": "Siguiente",
+    "updateButton": "Actualizar contraseña",
+    "userNotFound": "Usuario no encontrado",
+    "codeSent": "Código enviado",
+    "codeMessage": "Se ha enviado un código a tu correo electrónico. Ingresa los 6 dígitos.",
+    "invalidCode": "El código debe tener 6 dígitos",
+    "codeValid": "Código válido",
+    "changePassword": "Ahora crea tu nueva contraseña",
+    "passwordMismatch": "Las contraseñas no coinciden",
+    "passwordChanged": "Contraseña actualizada",
+    "passwordSuccess": "Tu contraseña ha sido actualizada correctamente",
+    "codeLabel": "Código de verificación",
+    "stepIndicator": {
+      "identity": "Identidad",
+      "code": "Código",
+      "password": "Contraseña"
+    },
+    "step2Subtitle": "Hemos enviado un código de 6 dígitos a tu correo",
+    "step2Info": "Revisa tu bandeja de entrada o carpeta de spam",
+    "step3Description": "Asegúrate de usar mayúsculas, minúsculas y caracteres especiales",
+    "closeButton": "Cerrar",
+    "backButton": "Atrás",
+    "codePlaceholder": "000000"
+  }
+}

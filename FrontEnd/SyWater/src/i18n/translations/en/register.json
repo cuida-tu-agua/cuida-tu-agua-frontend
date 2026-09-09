@@ -1,0 +1,73 @@
+{
+    "title": "Register",
+    "section1": {
+        "title": "User Information",
+        "input1": "Full Name",
+        "input2": "ID Number",
+        "input3": "Email",
+        "input4": "Password",
+        "input5": "Confirm Password"
+    },
+    "section2": {
+        "title": "Home Information",
+        "input1": "Home Name",
+        "input2": "Address",
+        "input3": "Phone",
+        "input4": "Stratum",
+        "input5": "Number of Residents",
+        "input6": "Country",
+        "checkbox": "Terms and conditions of use"
+    },
+
+    "action": {
+        "register": "Register"
+    },
+
+    "paragraph1": "Welcome to Sy Water. By accessing and using this platform, you accept these Terms and Conditions. If you do not agree with any of them, you should refrain from using the platform.",
+    "paragraph2": "Sy Water is a digital platform designed to promote responsible water use through consumption monitoring, visualization of statistics, report generation, and recommendations aimed at saving this resource.",
+    "paragraph3": "Access, registration, or use of the platform implies that the user has read, understood, and accepted these Terms and Conditions, as well as the Personal Data Processing Policy.",
+    "paragraph4": "To access certain features, the user must register by providing truthful, complete, and up-to-date information. The user agrees to keep their credentials confidential, not share their account, update their data, and notify any unauthorized use.",
+    "paragraph5": "The user agrees to use the platform responsibly and in accordance with Colombian law. It is prohibited to use it for illegal activities, attempt to access it without authorization, alter its operation, distribute malicious software, impersonate others, or copy content without authorization.",
+    "paragraph6": "All content on Sy Water, including software, source code, designs, logos, images, databases, texts, and graphics, is the property of its developers or their respective owners and is protected by Colombian copyright and intellectual property law.",
+    "paragraph7": "Sy Water collects and processes personal data only to provide its services and improve the user experience, respecting the principles of legality, purpose, freedom, security, transparency, and confidentiality.",
+    "paragraph8": "Sy Water will strive to keep the platform available continuously. However, it does not guarantee permanent availability due to scheduled maintenance, system updates, technical failures, or fortuitous events or force majeure.",
+    "paragraph9": "Sy Water provides monitoring and analysis tools for informational purposes. It does not guarantee that the platform is free of errors or that data provided by third parties is completely accurate.",
+    "paragraph10": "Sy Water may modify these Terms and Conditions at any time. The changes will be published on the platform and will take effect from their publication.",
+    "paragraph11": "Sy Water may suspend or cancel a user's access when they breach these Terms and Conditions, engage in fraudulent activities, affect the security or stability of the platform, or use the platform for illegal purposes.",
+    "paragraph12": "These Terms and Conditions are governed by the laws of the Republic of Colombia, especially the Political Constitution, Law 527 of 1999, Law 23 of 1982, Law 1273 of 2009, Law 1480 of 2011, Law 1581 of 2012, Decree 1377 of 2013, Law 1712 of 2014, and Law 1915 of 2018.",
+    "paragraph13": "For inquiries related to these Terms and Conditions, users may contact the official channels provided by Sy Water.",
+    "paragraph14": "These Terms and Conditions enter into force from their publication on the platform and will remain in force until modified or replaced by a new version.",
+
+    "close": "Close",
+  "success": {
+    "title": "Registration successful",
+    "message": "Your account has been created successfully. You can now log in."
+  },
+  "feedback": {
+    "errorTitle": "Error",
+    "emptyFullName": "Enter your full name",
+    "emptyDocument": "Enter your ID",
+    "invalidDocument": "Enter a numeric ID with at least 8 digits",
+    "emptyEmail": "Enter your email",
+    "invalidEmail": "Enter a valid email",
+    "emptyPassword": "Enter your password",
+    "emptyConfirmPassword": "Confirm your password",
+    "passwordTooShort": "Password must be at least 8 characters",
+    "passwordFormat": "Use at least 8 characters, one uppercase, one lowercase and one special symbol",
+    "passwordMismatch": "Passwords do not match",
+    "emptyHomeName": "Enter the home name",
+    "emptyAddress": "Enter the address",
+    "emptyPhone": "Enter your phone number",
+    "invalidPhone": "Enter a phone number with 10 to 15 digits",
+    "emptyStratum": "Enter the stratum",
+    "invalidNumber": "Enter a valid number",
+    "emptyInhabitants": "Enter number of inhabitants",
+    "termsNotAccepted": "You must accept the terms",
+    "saveError": "Unable to save your account. Try again."
+    ,
+    "duplicateDocument": "An account with that identification number already exists",
+    "duplicateEmail": "An account with that email already exists",
+    "duplicateAddress": "An account with that address already exists",
+    "duplicatePhone": "An account with that phone number already exists"
+  }
+}

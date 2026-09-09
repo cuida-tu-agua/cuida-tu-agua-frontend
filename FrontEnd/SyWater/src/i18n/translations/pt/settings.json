@@ -1,0 +1,49 @@
+{
+  "title": "Configurações",
+  "subtitle": "Personalize idioma e aparência",
+  "back": "Voltar ao Dashboard",
+  "theme": {
+    "title": "Tema",
+    "description": "Mude a aparência visual do app",
+    "light": "Claro",
+    "dark": "Escuro",
+    "standard": "Padrão",
+    "eco": "Eco",
+    "ecoLight": "Eco Claro",
+    "ecoDark": "Eco Escuro"
+  },
+  "density": {
+    "title": "Densidade",
+    "compact": "Compacto",
+    "standard": "Padrão",
+    "comfortable": "Confortável"
+  },
+  "language": {
+    "title": "Idioma",
+    "description": "Selecione o idioma do aplicativo",
+    "english": "Inglês",
+    "spanish": "Espanhol",
+    "french": "Francês",
+    "portuguese": "Português"
+  },
+  "notifications": {
+    "title": "Notificações",
+    "enabled": "Ativadas",
+    "disabled": "Desativadas"
+  },
+  "privacy": {
+    "title": "Privacidade",
+    "dataSharing": "Compartilhamento de Dados"
+  },
+  "about": {
+    "title": "Sobre",
+    "version": "Versão",
+    "help": "Ajuda e Suporte"
+  },
+  "logout": {
+    "title": "Sair",
+    "confirm": "Deseja sair?",
+    "cancel": "Cancelar",
+    "confirmButton": "Sair"
+  }
+}

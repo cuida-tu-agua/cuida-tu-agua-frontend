@@ -1,0 +1,27 @@
+{
+  "title": "Mon Profil",
+  "personalInfo": {
+    "title": "Informations Personnelles",
+    "name": "Nom",
+    "document": "Document",
+    "email": "Email",
+    "password": "Mot de passe"
+  },
+  "preferences": {
+    "title": "Préférences",
+    "notifications": "Notifications",
+    "language": "Langue",
+    "units": "Unités"
+  },
+  "security": {
+    "title": "Sécurité",
+    "changePassword": "Changer le Mot de Passe",
+    "twoFactor": "Authentification à Deux Facteurs"
+  },
+  "save": "Sauvegarder les Modifications",
+  "cancel": "Annuler",
+  "editProfile": "Modifier le profil",
+  "saveChanges": "Sauvegarder les modifications",
+  "profileUpdated": "Profil mis à jour",
+  "changesSaved": "Les modifications ont été sauvegardées avec succès"
+}
